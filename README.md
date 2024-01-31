@@ -1,4 +1,4 @@
-# Ipsum_Lorem_Text
+# Ipsum_Lorem_Text {Assignment C}
 <h1>Student: Michael V. Proctor</h1>
 <h1>Location: Bloomfield, New Jersey<h1>
 <h1>Institution: KnowledgeHut Class: Full Stack</h1>
