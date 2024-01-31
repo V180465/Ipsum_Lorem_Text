@@ -1,0 +1,692 @@
+# Assignment C
+# Student_Name:  Michael V Proctor
+# Location:  Bloomfield, New Jersey
+# Date: Jan 30, 2024
+# Institution:  KnowledgeHut   Class:  Full-Stack Development
+
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git init
+Initialized empty Git repository in C:/Users/Full Stack/OneDrive/Desktop/Ipsum_Lorem_text/.git/
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ ls -ltr
+total 0
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git clone https://github.com/V180465/Ipsum_Lorem_Text.git
+Cloning into 'Ipsum_Lorem_Text'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 1), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (8/8), 4.18 KiB | 2.09 MiB/s, done.
+Resolving deltas: 100% (1/1), done.
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Ipsum_Lorem_Text/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git add .
+warning: adding embedded git repository: Ipsum_Lorem_Text
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Ipsum_Lorem_Text
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Ipsum_Lorem_Text
+hint:
+hint: See "git help submodule" for more information.
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/Full Stack/OneDrive/Desktop/Ipsum_Lorem_text/.git/
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Ipsum_Lorem_Text
+
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ ls -ltr
+total 4
+drwxr-xr-x 1 Full Stack 197121 0 Jan 30 22:09 Ipsum_Lorem_Text/
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ cd Ispsum_Lorem_Text/
+bash: cd: Ispsum_Lorem_Text/: No such file or directory
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/Full Stack/OneDrive/Desktop/Ipsum_Lorem_text/.git/
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git branch
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git checkout new_alternate_branch
+error: pathspec 'new_alternate_branch' did not match any file(s) known to git
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git checkout -b new_alternate_branch
+Switched to a new branch 'new_alternate_branch'
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git branch
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git ls-files
+Ipsum_Lorem_Text
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ vim Ipsum_Lorem_Text/
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git ls-file
+git: 'ls-file' is not a git command. See 'git --help'.
+
+The most similar command is
+        ls-files
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git ls-files
+Ipsum_Lorem_Text
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ vim Ipsum_Lorem_Text
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ echo "Ipsum Lorem is one of the most contemporary templates for creating data for templates" > Ispum_Lorem.txt
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git status
+On branch new_alternate_branch
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Ipsum_Lorem_Text
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Ispum_Lorem.txt
+
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git add Ipsum_Lorem.txt
+fatal: pathspec 'Ipsum_Lorem.txt' did not match any files
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git add .
+warning: in the working copy of 'Ispum_Lorem.txt', LF will be replaced by CRLF the next time Git touches it
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git status
+On branch new_alternate_branch
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Ipsum_Lorem_Text
+        new file:   Ispum_Lorem.txt
+
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ rm Ipsum_Lorem.txt
+rm: cannot remove 'Ipsum_Lorem.txt': No such file or directory
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ rm Ispum_Lorem.txt
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git status
+On branch new_alternate_branch
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Ipsum_Lorem_Text
+        new file:   Ispum_Lorem.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Ispum_Lorem.txt
+
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git commit -m Ispum_Lorem.txt
+[new_alternate_branch (root-commit) 1e0058f] Ispum_Lorem.txt
+ 2 files changed, 2 insertions(+)
+ create mode 160000 Ipsum_Lorem_Text
+ create mode 100644 Ispum_Lorem.txt
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git status
+On branch new_alternate_branch
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Ispum_Lorem.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git commit -m "New file added"
+On branch new_alternate_branch
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Ispum_Lorem.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git status
+On branch new_alternate_branch
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Ispum_Lorem.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git log
+commit 1e0058f57c2dbacb4661282cee78d8cfae0a7f2e (HEAD -> new_alternate_branch)
+Author: Michael V Proctor <test_repo_v180465@outlook.com>
+Date:   Tue Jan 30 22:24:30 2024 -0500
+
+    Ispum_Lorem.txt
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git branch
+* new_alternate_branch
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git checkout branch main
+error: pathspec 'branch' did not match any file(s) known to git
+error: pathspec 'main' did not match any file(s) known to git
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git branch main
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git branch
+  main
+* new_alternate_branch
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git checkout main
+Switched to branch 'main'
+D       Ispum_Lorem.txt
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Ispum_Lorem.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git add .
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    Ispum_Lorem.txt
+
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git commit -m "Ipsum_Lorem added to commit"
+[main 372b6e6] Ipsum_Lorem added to commit
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 Ispum_Lorem.txt
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git log
+commit 372b6e653ede13de9ce1e9c599dfc8182b2b0526 (HEAD -> main)
+Author: Michael V Proctor <test_repo_v180465@outlook.com>
+Date:   Tue Jan 30 22:28:13 2024 -0500
+
+    Ipsum_Lorem added to commit
+
+commit 1e0058f57c2dbacb4661282cee78d8cfae0a7f2e (new_alternate_branch)
+Author: Michael V Proctor <test_repo_v180465@outlook.com>
+Date:   Tue Jan 30 22:24:30 2024 -0500
+
+    Ispum_Lorem.txt
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git ls-files
+Ipsum_Lorem_Text
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git checkout main
+Already on 'main'
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git branch
+* main
+  new_alternate_branch
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git merge new_alternate_branch
+Already up to date.
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git log
+commit 372b6e653ede13de9ce1e9c599dfc8182b2b0526 (HEAD -> main)
+Author: Michael V Proctor <test_repo_v180465@outlook.com>
+Date:   Tue Jan 30 22:28:13 2024 -0500
+
+    Ipsum_Lorem added to commit
+
+commit 1e0058f57c2dbacb4661282cee78d8cfae0a7f2e (new_alternate_branch)
+Author: Michael V Proctor <test_repo_v180465@outlook.com>
+Date:   Tue Jan 30 22:24:30 2024 -0500
+
+    Ispum_Lorem.txt
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git branch
+* main
+  new_alternate_branch
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git checkout new_alternate_branch
+Switched to branch 'new_alternate_branch'
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git ls-files
+Ipsum_Lorem_Text
+Ispum_Lorem.txt
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ rm Ispum_Lorem.txt
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git status
+On branch new_alternate_branch
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Ispum_Lorem.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git add .
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git commit -m "Old Ispum mispelled file"
+[new_alternate_branch c318aa7] Old Ispum mispelled file
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 Ispum_Lorem.txt
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ ls -files
+ls: unknown option -- e
+Try 'ls --help' for more information.
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git ls-files
+Ipsum_Lorem_Text
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git branch main
+fatal: a branch named 'main' already exists
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git checkout main
+Switched to branch 'main'
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git ls-files
+Ipsum_Lorem_Text
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git checkout Ipsum_Lorem_Text/
+Updated 0 paths from the index
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git branch new_alternate_branch
+fatal: a branch named 'new_alternate_branch' already exists
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git branch new_alternate_branch
+fatal: a branch named 'new_alternate_branch' already exists
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (main)
+$ git checkout new_alternate_branch
+Switched to branch 'new_alternate_branch'
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git ls-files
+Ipsum_Lorem_Text
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ echo "Author:  Michael V Proctor, Class:  Full Stack" > Ipsum_Lorem_Text/
+bash: Ipsum_Lorem_Text/: Is a directory
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git ls
+git: 'ls' is not a git command. See 'git --help'.
+
+The most similar command is
+        lfs
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git ls-files
+Ipsum_Lorem_Text
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ cat Ispum_Lorem_Text
+cat: Ispum_Lorem_Text: No such file or directory
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git ls-ltr
+git: 'ls-ltr' is not a git command. See 'git --help'.
+
+The most similar command is
+        ls-tree
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ git ls-files
+Ipsum_Lorem_Text
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ cd Ispum_Lorem_Text
+bash: cd: Ispum_Lorem_Text: No such file or directory
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ ls
+Ipsum_Lorem_Text/
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text (new_alternate_branch)
+$ cd Ipsum_Lorem_Text/
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git ls-files
+.gitignore
+LICENSE
+README.md
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ echo "The advent of Ispum Lorem files made it much easier for developers to fill in content on web pages" > file1.txt
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git add .
+warning: in the working copy of 'file1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file1.txt
+
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git commit -m "new file added to main branch"
+[main 7a377d7] new file added to main branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file1.txt
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git merge new_alternate_branch
+merge: new_alternate_branch - not something we can merge
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git ls-files
+.gitignore
+LICENSE
+README.md
+file1.txt
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ vim file1.txt
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git merge main
+Already up to date.
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git merge new_alternate_branch
+merge: new_alternate_branch - not something we can merge
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ status
+bash: status: command not found
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git checkout new_alternate_main
+error: pathspec 'new_alternate_main' did not match any file(s) known to git
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git branch new_alternate_branch
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git branch
+* main
+  new_alternate_branch
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git branch new_alternate_branch
+fatal: a branch named 'new_alternate_branch' already exists
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git checkout -b new_alternate_branch
+fatal: a branch named 'new_alternate_branch' already exists
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git checkout new_alternate_branch
+Switched to branch 'new_alternate_branch'
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (new_alternate_branch)
+$ git ls-files
+.gitignore
+LICENSE
+README.md
+file1.txt
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (new_alternate_branch)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git ls-files
+.gitignore
+LICENSE
+README.md
+file1.txt
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git commit -m file1.txt
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git checkout new_alternate_branch
+Switched to branch 'new_alternate_branch'
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (new_alternate_branch)
+$ git commit -m file1.txt
+On branch new_alternate_branch
+nothing to commit, working tree clean
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (new_alternate_branch)
+$ git log
+commit 7a377d7bb5f8a1c2edee131da71100bb5272f497 (HEAD -> new_alternate_branch, main)
+Author: Michael V Proctor <test_repo_v180465@outlook.com>
+Date:   Tue Jan 30 22:44:09 2024 -0500
+
+    new file added to main branch
+
+commit a36fa36024225934fcaf1ac24c804b8acb866ed8 (origin/main, origin/HEAD)
+Author: Michael V Proctor <157426331+V180465@users.noreply.github.com>
+Date:   Tue Jan 30 22:08:52 2024 -0500
+
+    Update README.md
+
+commit e055f830281c2d8084b55df924cc117a3f8ddce4
+Author: Michael V Proctor <157426331+V180465@users.noreply.github.com>
+Date:   Tue Jan 30 21:41:03 2024 -0500
+
+    Initial commit
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (new_alternate_branch)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git merge new_alternate_branch
+Already up to date.
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git log
+commit 7a377d7bb5f8a1c2edee131da71100bb5272f497 (HEAD -> main, new_alternate_branch)
+Author: Michael V Proctor <test_repo_v180465@outlook.com>
+Date:   Tue Jan 30 22:44:09 2024 -0500
+
+    new file added to main branch
+
+commit a36fa36024225934fcaf1ac24c804b8acb866ed8 (origin/main, origin/HEAD)
+Author: Michael V Proctor <157426331+V180465@users.noreply.github.com>
+Date:   Tue Jan 30 22:08:52 2024 -0500
+
+    Update README.md
+
+commit e055f830281c2d8084b55df924cc117a3f8ddce4
+Author: Michael V Proctor <157426331+V180465@users.noreply.github.com>
+Date:   Tue Jan 30 21:41:03 2024 -0500
+
+    Initial commit
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git log --graph
+* commit 7a377d7bb5f8a1c2edee131da71100bb5272f497 (HEAD -> main, new_alternate_branch)
+| Author: Michael V Proctor <test_repo_v180465@outlook.com>
+| Date:   Tue Jan 30 22:44:09 2024 -0500
+|
+|     new file added to main branch
+|
+* commit a36fa36024225934fcaf1ac24c804b8acb866ed8 (origin/main, origin/HEAD)
+| Author: Michael V Proctor <157426331+V180465@users.noreply.github.com>
+| Date:   Tue Jan 30 22:08:52 2024 -0500
+|
+|     Update README.md
+|
+* commit e055f830281c2d8084b55df924cc117a3f8ddce4
+  Author: Michael V Proctor <157426331+V180465@users.noreply.github.com>
+  Date:   Tue Jan 30 21:41:03 2024 -0500
+
+      Initial commit
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git push -u main main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git checkout new_alternate_branch
+Switched to branch 'new_alternate_branch'
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (new_alternate_branch)
+$ git init
+Reinitialized existing Git repository in C:/Users/Full Stack/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text/.git/
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (new_alternate_branch)
+$ git merge main new_alternate_branch
+Already up to date.
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (new_alternate_branch)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 374 bytes | 187.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/V180465/Ipsum_Lorem_Text.git
+   a36fa36..7a377d7  main -> main
+
+Full Stack@m622pro100 MINGW64 ~/OneDrive/Desktop/Ipsum_Lorem_text/Ipsum_Lorem_Text (main)
+$
